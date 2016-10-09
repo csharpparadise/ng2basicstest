@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  persons : Array<Person> = [new Person(1,"Tester"), new Person(2, "Maxi")];
+}
+
+
+export class Person {
+  id: number;
+  name: string;
+
+  constructor(id, name){
+    this.id = id;
+    this.name = name;
+  }
 }
